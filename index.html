@@ -11,9 +11,11 @@
     
     <title>CAme - private self calendar</title>
     <link rel="stylesheet" href="src/style/style.css" />
+    <link href="src/apis/fontawesome/all.css" rel="stylesheet">
     <script src="src/js/index.js" defer></script>
 </head>
 <body>
+    <h3>Credits to <a href="https://github.com/B00bleaTea/came">@B00bleaTea</a> on GitHub</h3>
     <img src="src/media/logo.png" class="logo"/>
     <div id="cal" class="cal">
         <input id="textbox" name="textbox" type="text" class="textbox" placeholder="Today I feel like..."/>
@@ -21,7 +23,6 @@
         <input type="submit" onclick="ev_restore();" value="refresh" class="btn"/>
         <input type="submit" onclick="ev_export();" value="export" class="btn"/>
     </div>
-    <hr class="main_line"/>
     <div id="cals">
     </div>
 </body>

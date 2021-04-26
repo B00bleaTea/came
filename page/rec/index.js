@@ -2,7 +2,6 @@ var params = (new URL(document.location)).searchParams;
 var base = params.get('base');
 const date = new Date();
 
-
 if (base) {
     try {
         if (!confirm("you will lose all of your notes, do you want to continue?")) {
@@ -28,6 +27,4 @@ if (base) {
 } else {
     alert("no base supplied");
 }
-
-
 window.location = '/';
