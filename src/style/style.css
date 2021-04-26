@@ -1,3 +1,13 @@
+/*
+* If this project ever gets forked please edit this file.
+* this is sccs, it has the same syntax as css, but with a bit more features,
+* use the compile hero VScode extension to compile scss
+*********************************************************
+* scss docs: https://docs.moodle.org/dev/SCSS
+* compile here VScode extension: https://marketplace.visualstudio.com/items?itemName=Wscats.eno
+* scss syntax highlithing/formatter: https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter
+*********************************************************
+*/
 html, body {
   margin-top: 0;
   margin-bottom: 0;

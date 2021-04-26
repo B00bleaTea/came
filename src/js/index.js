@@ -1,5 +1,6 @@
-var textbox = document.getElementById("textbox");        
+var textbox = document.getElementById("textbox");       
 var main_div = document.getElementById("cals");
+
 
 function ev_add() {
     if (textbox.value.trim()) {
@@ -8,6 +9,7 @@ function ev_add() {
         if ("last" in window.localStorage) {
             if (window.localStorage["last"] == today.getDate()) {
                 alert("you have already contributed here today");
+                textbox.focus();
                 return;
             } else {
                 window.localStorage["last"] = parseInt(today.getDate());
