@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- no need to dig through sources, check -->
+<!-- https://github.com/B00bleaTea/came -->
+<!-- or /src -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="a front-end webapp for tracking your feelings" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>CAme - private self calendar</title>
+    <link rel="stylesheet" href="src/style/style.css" />
+    <script src="src/js/index.js" defer></script>
+</head>
+<body>
+    <img src="src/media/logo.png" class="logo"/>
+    <div id="cal" class="cal">
+        <input id="textbox" name="textbox" type="text" class="textbox" placeholder="Today I feel like..."/>
+        <input type="submit" onclick="ev_add();" value="add" class="btn"/>
+        <input type="submit" onclick="ev_restore();" value="refresh" class="btn"/>
+        <input type="submit" onclick="ev_export();" value="export" class="btn"/>
+    </div>
+    <hr class="main_line"/>
+    <div id="cals">
+    </div>
+</body>
+</html>
+<!-- look at you using the dev tools:) -->

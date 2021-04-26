@@ -1,0 +1,137 @@
+$bg: #fff;
+$bg_dark: #6a9213;
+$colour_dmain: #9bca34;
+
+$element_main: #a3d141;
+
+$font_light: #89b8ae;
+$font_main: #1a725f;
+$font_dark: #0d382f;
+
+$width_main: 75%;
+$width_secondary: 60%;
+$width_small: 38%;
+
+
+html, body {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: $bg;
+}
+
+
+.main_line {
+    width: $width_main + 5%;
+    border-radius: 40%;
+
+    border-color: $colour_dmain;
+    background-color: $colour_dmain;
+    margin-bottom: 1em;
+}
+
+
+.cal {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+
+    & * {
+        margin-left: 0.1rem;
+    }
+}
+
+.textbox {
+    width: $width_secondary;
+    padding: 0.7rem;
+
+    border: 1px solid lighten($element_main, 20%);
+    outline: none;
+
+    color: $font_main;
+}
+.textbox:hover,
+.textbox:focus {
+    border: 1px solid $element_main;
+}
+
+
+
+.btn {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+
+    color: $font_main;
+    background-color: $element_main;
+    
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border: none;
+
+    @media only screen and (max-width: 600px) {
+        & {
+            width: 18%;
+            padding: 0.2em;
+
+            font-size: 0.7em;
+        }
+      }
+
+    &:hover,
+    &:focus {
+        animation: anim 1s ease-in-out infinite;
+    }
+
+    @keyframes anim {
+        50% {
+            background-color: lighten($element_main, 8.6%);
+            color: lighten($font_main, 8.6%);
+        }
+    }
+}
+
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media only screen and (max-width: 600px) {
+        & {
+            width: 70%;
+        }
+      }
+}
+
+.event {
+    display: block;
+    word-break: break-all;
+    word-wrap: break-word;
+
+    border-left: 5px solid $bg_dark;
+    border-bottom: 2px solid lighten($bg_dark, 20%);
+
+
+    .text {
+        margin-left: 0.5em;
+        width: $width_small;
+
+        color: $font_dark;
+
+        font-family: sans-serif;
+        font-size: 1.15em;
+    }
+
+    .date {
+        text-align: end;
+        text-transform: uppercase;
+        color: $font_light;
+        font-family: sans-serif;
+    }
+}

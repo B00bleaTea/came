@@ -1,0 +1,98 @@
+html, body {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.main_line {
+  width: 80%;
+  border-radius: 40%;
+  border-color: #9bca34;
+  background-color: #9bca34;
+  margin-bottom: 1em;
+}
+
+.cal {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+.cal * {
+  margin-left: 0.1rem;
+}
+
+.textbox {
+  width: 60%;
+  padding: 0.7rem;
+  border: 1px solid #cbe593;
+  outline: none;
+  color: #1a725f;
+}
+
+.textbox:hover,
+.textbox:focus {
+  border: 1px solid #a3d141;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #1a725f;
+  background-color: #a3d141;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border: none;
+}
+@media only screen and (max-width: 600px) {
+  .btn {
+    width: 18%;
+    padding: 0.2em;
+    font-size: 0.7em;
+  }
+}
+.btn:hover, .btn:focus {
+  animation: anim 1s ease-in-out infinite;
+}
+@keyframes anim {
+  50% {
+    background-color: #b4da64;
+    color: #22967d;
+  }
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 70%;
+  }
+}
+
+.event {
+  display: block;
+  word-break: break-all;
+  word-wrap: break-word;
+  border-left: 5px solid #6a9213;
+  border-bottom: 2px solid #a8e328;
+}
+.event .text {
+  margin-left: 0.5em;
+  width: 38%;
+  color: #0d382f;
+  font-family: sans-serif;
+  font-size: 1.15em;
+}
+.event .date {
+  text-align: end;
+  text-transform: uppercase;
+  color: #89b8ae;
+  font-family: sans-serif;
+}
