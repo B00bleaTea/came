@@ -1,4 +1,5 @@
-# [came](https://came.netlify.app/)
+# came
+## Note: this project is dead.
 a front-end weapp for tracking your freelings
 
 ***
